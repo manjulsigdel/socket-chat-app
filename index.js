@@ -13,6 +13,8 @@ io.on('connection', function(socket){
   });
 });
 
+console.log(process.env.NODE_ENV || 'dev');
+
 http.listen(port, function(){
   console.log('listening on *:12000');
 });
